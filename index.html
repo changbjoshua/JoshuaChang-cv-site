@@ -1,89 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Joshua B. Chang</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Fjalla+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joshua B. Chang</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <nav>
-        <p>Joshua B. Chang</p>
-        <p><a href="contact.html">Contact Joshua</a></p>
-    </nav>
-    <section>
-        <h1>Joshua Boseuk Chang</h1>
-        <img src="images/jbcheadshot.png" height="260" width="160" alt="This is Joshua's headshot">
-        <p>2547 Redwood Lane Watkinsville, GA 30677 &bull; 678-992-4527 &bull; jbc92742@uga.edu </p>
-        <p>I am a proactive and collaborative team member with a strong foundation in programming, consistently delivering high-quality solutions that enhance group productivity and project success</p>
+
+  <!-- NAV -->
+  <nav>
+    <p>Joshua B. Chang</p>
+    <p><a href="contact.html">Contact Joshua</a></p>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <h1>Joshua Boseuk Chang</h1>
+    <img src="images/jbcheadshot.png" alt="Joshua's headshot" />
+    <p>2547 Redwood Lane Watkinsville, GA 30677 • 678‑992‑4527 • <a href="mailto:jbc92742@uga.edu">jbc92742@uga.edu</a></p>
+    <p>I’m a proactive team player with a strong foundation in programming, delivering high‑quality solutions that drive project success.</p>
+  </section>
+
+  <div class="container">
+
+    <!-- EDUCATION -->
+    <section class="section-education">
+      <h2>Education</h2>
+      <p>
+        <strong>University of Georgia</strong>, Franklin College of Arts & Sciences — B.S. in Computer Science (May 2026)<br/>
+        GPA: 3.5/4.0<br/>
+        <em>Key Courses:</em> Intro to Computing & Programming, Software Development, Data Structures, Systems Programming, Database Management, Web Programming, Algorithms, Computer Architecture
+      </p>
     </section>
-    <hr>
-    <section>
-        <h2>Education</h2>
-        <p>University of Georgia, Franklin College of Arts & Sciences Athens, GA Bachelor of Science in Computer Science May 2026 GPA: 3.5/4.0 Courses: Introduction to Computing and Programming, Software Development, Data Structures, Systems Programming, Database Management, Web Programming, Algorithms, Computer Architecture</p>
+
+    <!-- HONORS -->
+    <section class="section-honors">
+      <h2>Honors & Awards</h2>
+      <dl>
+        <dt>HOPE Scholarship Recipient</dt>
+        <dd>Fall 2021</dd>
+      </dl>
     </section>
-    <section>
-        <h2>Honors and Awards</h2>
-        <dl>
-            <dt>HOPE Scholarship Recipient</dt>
-            <dd>Fall 2021</dd>
-        </dl>
+
+    <!-- SKILLS -->
+    <section class="section-skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Java, C, Assembly, HTML5, CSS, JavaScript, SQL</li>
+        <li><strong>Tools:</strong> Git, VS Code, Eclipse, VIM, Emacs, Odin</li>
+        <li><strong>Frameworks/Libraries:</strong> Node.js, React</li>
+      </ul>
     </section>
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, C, Assembly, HTML5, CSS, Javascript, SQL</li>
-            <li>Software: Git, VS Code, Eclipse, VIM, Emacs, Odin</li>
-            <li>Frameworks/Libraries: Node.js, React</li>
-        </ul>
+
+    <!-- EXPERIENCE -->
+    <section class="section-experience">
+      <h2>Leadership & Experience</h2>
+      <dl>
+        <dt><a href="https://www.athenskendo.com/" target="_blank">UGA Kendo Club Vice President</a></dt>
+        <dd>08/2023 – Present</dd>
+        <dt>International Korean Student Tutoring, Athens, GA</dt>
+        <dd>01/2024 – Present</dd>
+        <dt>Willie’s Line Cook, Athens, GA</dt>
+        <dd>08/2023 – 02/2024</dd>
+      </dl>
     </section>
-    <section>
-        <h2>Leadership and Experience</h2>
-        <dl>
-            <dt><a href="https://www.athenskendo.com/" target="_blank">UGA Kendo Club Vice President</a></dt>
-            <dd>08/2023-Present</dd>
-            <dt>International Korean Student Tutoring, Athens, GA</dt>
-            <dd>01/2024-Present</dd>
-            <dt>Willies Line Cook, Athens, GA</dt>
-            <dd>08/2023-02/2024</dd>
-        </dl>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <div class="three-col">
-            <div class="card">
-                <img src="images/weatherapp.jpeg" alt="Weather Data Analysis Tool">
-                <h3>Weather Data Analysis Tool</h3>
-                <ul>
-                    <li>Developed a Java tool to fetch and analyze real-time weather data via public APIs.</li>
-                    <li>Utilized JSON parsing libraries to process data, with JavaFX for the user interface.</li>
-                    <li>Provided features like trend analysis and historical weather comparisons.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <img src="images/customallocator.png" alt="Custom Memory Allocator">
-                <h3>Custom Memory Allocator</h3>
-                <ul>
-                    <li>Designed and implemented a custom memory allocator in C to optimize memory usage for high-performance applications.</li>
-                    <li>Provided functions like malloc and free, tailored for minimal fragmentation and efficient memory allocation cycles.</li>
-                </ul>
-            </div>
-            <div class="card">
-                <img src="images/fitnessapp.jpeg" alt="Exercise Tracker App">
-                <h3>Exercise Tracker App</h3>
-                <ul>
-                    <li>Java-based application for tracking and analyzing personal fitness activities, enhancing user engagement with customizable workout plans.</li>
-                    <li>Integrated JavaFX for a dynamic and responsive user interface, coupled with SQLite.</li>
-                    <li>Implemented advanced features like social sharing and progress visualization to motivate users and provide insightful feedback.</li>
-                </ul>
-            </div>
+
+    <!-- PROJECTS -->
+    <section class="section-projects">
+      <h2>Projects</h2>
+      <div class="three-col">
+        <div class="card">
+          <img src="images/weatherapp.jpeg" alt="Weather Data Analysis Tool" />
+          <h3>Weather Data Analysis Tool</h3>
+          <ul>
+            <li>Java tool to fetch and analyze real‑time weather data via public APIs.</li>
+            <li>JSON parsing for data processing, with JavaFX UI.</li>
+            <li>Trend analysis and historical comparisons.</li>
+          </ul>
         </div>
+        <div class="card">
+          <img src="images/customallocator.png" alt="Custom Memory Allocator" />
+          <h3>Custom Memory Allocator</h3>
+          <ul>
+            <li>Implemented a C memory allocator optimized for minimal fragmentation.</li>
+            <li>Custom malloc/free functions for high‑performance apps.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="images/fitnessapp.jpeg" alt="Exercise Tracker App" />
+          <h3>Exercise Tracker App</h3>
+          <ul>
+            <li>JavaFX app for tracking and analyzing fitness activities.</li>
+            <li>Integrated with SQLite for persistent data storage.</li>
+            <li>Features social sharing and progress visualization.</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <footer>
-        <p>&copy; <a href="contact.html">Joshua B. Chang</a> &#9830; <a href="https://www.linkedin.com/in/joshua-chang-a54509188/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i></a></p>
-    </footer>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 <a href="contact.html">Joshua B. Chang</a> &#9830;
+      <a href="https://www.linkedin.com/in/joshua-chang-a54509188/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </p>
+  </footer>
+
 </body>
 </html>
